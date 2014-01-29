@@ -1,0 +1,41 @@
+<% include ../templates/_header.ejs %>
+
+<br>
+
+<div class="container">
+  
+  
+   
+  <div class = 'col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+  
+    <form class="form-signin" role="form" action="/registeruser" method="post" accept-charset="utf-8">
+      <h2 class="form-signin-heading">Register New User</h2>
+      
+      <br>
+      
+      <h5>Account Set Up</h5>
+      <input type="email" class="form-control" name = 'email' placeholder="Email address" required autofocus>
+      <input type="password" class="form-control" name = 'password' placeholder="Password" required>
+      <input type="password" class="form-control" name = 'password2' placeholder="Confirm Password" required>
+      
+      <br><h5>Personal Details</h5>
+      <input type="text" class="form-control" name = 'fname' placeholder="First Name(s)" required>
+      <input type="text" class="form-control" name = 'sname' placeholder="Surname" required>
+      
+      <br>
+      
+      <input type="text" class="form-control" name = 'house' placeholder="House Name/Number" required>
+      <input type="text" class="form-control" name = 'postcode' placeholder="Postcode" required>
+      
+      <label class="checkbox">
+		  <input type="checkbox" value="remember-me"> Sign up to mailing list. (This includes newsletters of any new updates we have on the site and application.)
+      </label>
+      
+      <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+    </form>
+  
+  </div>
+  
+</div> 
+
+<% include ../templates/_footer.ejs %>

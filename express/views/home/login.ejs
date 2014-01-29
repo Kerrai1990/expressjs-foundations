@@ -1,0 +1,35 @@
+<% include ../templates/_header.ejs %>
+
+<br>
+
+<div class="container">
+
+  <div class = 'col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+
+    <form class="form-signin" role="form" action="/loginuser" method="post" accept-charset="utf-8">
+      <h2 class="form-signin-heading">Please sign in</h2>
+      
+      <br>
+      
+      <input type="email" class="form-control" name = 'email'  placeholder="Email address" required autofocus>
+      <input type="password" class="form-control" name = 'password' placeholder="Password" required>
+      <label class="checkbox">
+	<input type="checkbox" value="remember-me"> Remember me
+      </label>
+      
+      <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+      
+      <br>
+      
+      <a href = '/register' ><h5>Register</h5></a>
+      <a href = '/forgot' ><h5>Forgot Password</h5></a>
+      
+    </form>
+
+    <br>
+    
+  </div>
+  
+</div> 
+
+<% include ../templates/_footer.ejs %>
